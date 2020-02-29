@@ -1,0 +1,28 @@
+<h1>Welcome to book api</h1>
+<div>
+    <form>
+        <input type="hidden" name = "book.id" value="book.id"/>
+        <!-- Here book is an instance of Book from book.component.ts -->
+        Enter Title: <input type="text" [(ngModel)]="book.title" name="title"> <br>
+        Enter Author: <input type="text" [(ngModel)]="book.author" name="author"> <br>
+        <button (click) = "addBook()">Add Book</button>
+    </form>
+</div>
+<div>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Actions</th>
+        </tr>
+        <!-- books is an array from BookComponent class of book.component.ts file -->
+        <tr *ngFor="let book of books">
+            <!-- Id, title and author are as specified in Book model of spring project -->
+            <td>{{book.id}}</td> 
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td><button (click) = "getBookById(book.id)">Update</button> | <button (click)="deleteBook(book.id)">Delete</button></td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,4 @@
+com/desale/spring/config/WebConfig.class
+com/desale/spring/model/Book.class
+com/desale/spring/config/MyWebAppInitializer.class
+com/desale/spring/config/AppConfig.class
