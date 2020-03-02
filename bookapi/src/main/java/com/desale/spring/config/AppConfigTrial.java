@@ -47,7 +47,7 @@ public class AppConfigTrial {
 	            settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
 	            settings.put(Environment.URL, "jdbc:mysql://localhost:3306/bookapi?useSSL=false");
 	            settings.put(Environment.USER, "root");
-	            settings.put(Environment.PASS, "root");
+	            settings.put(Environment.PASS, "Mymysql1");
 	            settings.put(Environment.HBM2DDL_AUTO, "create");
 	            settings.put(Environment.SHOW_SQL, true);
 	          
